@@ -475,12 +475,38 @@
               </div>
             </div>
             <!-- 헤더 메인의 오른쪽 -->
-            <div class="header-main-right clearfix"></div>
+            <div class="header-main-right clearfix">
+              <form class="search-form">
+                <input type="text" class="search-txt" placeholder="무엇을 찾아드릴까요?" />
+                <input type="text" class="search-bt" />
+              </form>
+              <a href="#" class="bucket">
+                <span class="bucket-count">0</span>
+              </a>
+            </div>
           </div>
         </div>
       </header>
       <!-- 비주얼 -->
-      <section class="visual"></section>
+      <section class="visual">
+        <div class="visual-slide">
+          <!-- 비주얼 스와이퍼 슬라이드 -->
+          <div class="swiper sw-visual">
+            <div class="swiper-wrapper" id="data-visual">
+              <!-- 외부 비주얼 데이터(json) -->
+            </div>
+          </div>
+        </div>
+        <!-- 좌우 슬라이드 이동 버튼 -->
+        <button class="visual-prev">이전</button>
+        <button class="visual-next">다음</button>
+        <!-- 슬라이드 콘트롤러 -->
+        <div class="visual-control clearfix">
+          <button class="visual-play"></button>
+          <div class="visual-pg">1/17</div>
+          <button class="visual-more"></button>
+        </div>
+      </section>
       <!-- 오늘의 물품 -->
       <section class="today"></section>
       <!-- 알뜰물품 -->
